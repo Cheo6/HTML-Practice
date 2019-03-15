@@ -1,0 +1,375 @@
+/*importing font from google fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+
+* {
+
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color: #777;
+}
+
+
+/*this will set remove margin and padding*/
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    background-image: url(img/dbz-header1.jpg);
+    /*will exapnd until one f the edges of the photo reaches the edege of the browser    */
+    background-size: cover;
+    /* adding a dark hue to change shadow of image  */
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+    /*adding padding to bottom to give some gap for h1 tag    */
+    padding-bottom: 100px;
+    /*    */
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    /*tells the broswer to render these elements in a line    */
+    display: inline;
+}
+
+.nav a {
+    /*will give space between a  tags    */
+    padding: .5em;
+    color: white;
+    /*will remove the underline for the link    */
+    text-decoration: none;
+    /*this will alow the a tag to a position as a inline element but can style top and bottom by adding block element    */
+    display: inline-block;
+}
+
+/*using hover feature over nav links*/
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.main-nav {
+    /*this will center the text on the screen*/
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: lighter;
+    /*adding the horizontal rule in CSS    */
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+
+}
+
+.main-nav li {
+    /*this gives space between the nav links.    */
+    padding: 0 5%;
+}
+
+.page-name {
+    text-align: center;
+    margin: 0;
+    font-size: 3em;
+    font-family: 'Cinzel', serif;
+    font-weight: normal;
+    color: white;
+}
+
+.page-name-large {
+    font-size: 5.5em;
+    font-weight: bold;
+    padding-top: .75em;
+}
+
+
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    /*this will make the section with class container have a max width of 900px;    */
+    max-width: 900px;
+    /*settign the top and bottom margin to 0 and left and right to auto to center    */
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: 'Russo One', sans-serif;
+    font-weight: normal;
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+
+}
+
+.about-img {
+    width: 250px;
+    height: 250px;
+    /* this will tell the image to remove its self from the flow and be to the left side of the document   */
+    float: left;
+    /*giving the margin size of 15 to the img will give room for the image to breath    */
+    margin: 15px;
+    /*to create a circle we use the border-raduis property to style how far we want to curve the edges. 50% will make a perfect cicle.   */
+    border-radius: 50%;
+}
+
+
+.main-footer {
+    background-color: #f85b1a;
+    color: white;
+    padding: .25em 0;
+}
+
+.main-footer-container {
+    /*will make elements line up agaisnt eachother    */
+    display: flex;
+    align-items: center
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    /* when you hover over button the mouse turns into a pointer   */
+    cursor: pointer;
+}
+
+.btn-header {
+    display: block;
+    /*    margin: 0 auto;*/
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    border: 2px solid #f85b1a;
+
+    border-radius: .3em;
+    background-color: rgba(0, 0, 0, .4);
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+    transition: background-color 1s ease;
+    transition: color 1s ease;
+
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .4);
+    color: #2c2c2c;
+    font-weight: bold;
+
+
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    color: #f85b1a;
+    font-size: 4em;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+    border-bottom: none;
+}
+
+.tour-item {
+    padding-right: .5em;
+    display: inline-block;
+}
+
+.tour-date {
+    color: #555;
+    font-weight: bold;
+    width: 11%;
+}
+
+.tour-saga {
+    width: 24%;
+}
+
+.tour-website {
+    width: 42%;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+.btn-primary {
+    background-color: #f85b1a;
+    font-family: 'Russo One', sans-serif;
+    border-color: #f85b1a;
+    color: white;
+    border: none;
+    transition: background-color 1s ease;
+    border-radius: 0.3em;
+}
+
+.btn-primary:hover {
+    background-color: #b73b08;
+    font-weight: bold;
+}
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.Seasons-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    ;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-col {
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+.cart-price{
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+.cart-quantity{
+    width: 35%;
+}
+.cart-item-title{
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-img{
+    width: 75px;
+    height: auto;
+}
+.btn-danger{
+    color: white;
+    background-color: #14c752;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: #008b30;
+}
+
+.cart-quantity-input{
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #f85b1a;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child{
+    border-bottom: 1px solid black;
+}
+.cart-row:last-child .cart-col{
+    border: none;
+}
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
